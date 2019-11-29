@@ -20,6 +20,15 @@ describe('flow-control', () => {
       return done()
     })
   })
+  
+function basicTeenager(age){
+  if(age >= 13 && age <= 19){
+    return "You are a teenager!"
+  }
+  else{
+    return "You are not a teenager"
+  }
+}
 
   describe('basicTeenager', () => {
     it('should return "You are a teenager!" if the age is between 13-19', () => {
