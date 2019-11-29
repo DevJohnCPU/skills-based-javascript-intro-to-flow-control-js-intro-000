@@ -35,7 +35,7 @@ function basicTeenager(ageChecker){
       expect(basicTeenager(13)).toEqual("You are a teenager!");
     })
 
-    it('should return undefined if the age is not between 13-19', () => {
+    it('should return undefined if the age is not between 13-19', (ageChecker) => {
       expect(basicTeenager(12)).toBe(undefined)
     })
 
