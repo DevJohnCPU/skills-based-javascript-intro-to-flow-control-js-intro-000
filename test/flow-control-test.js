@@ -54,6 +54,11 @@ function ageChecker(age){
 
 }
 
+function ternaryTeenager(age){
+  
+  return age >= 13 && age <= 19 ? "You are a teenager!" : "You are not a teenager"
+    
+}
 
   describe('basicTeenager', () => {
     it('should return "You are a teenager!" if the age is between 13-19', () => {
