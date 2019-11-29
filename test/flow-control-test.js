@@ -25,9 +25,7 @@ function basicTeenager(ageChecker){
   if(ageChecker >= 13 && ageChecker <= 19){
     return "You are a teenager!"
   }
-  else{
-    return "You are not a teenager"
-  }
+  
 }
 
   describe('basicTeenager', (ageChecker) => {
