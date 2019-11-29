@@ -27,6 +27,15 @@ function basicTeenager(ageChecker){
   }
 
 }
+function teenager(ageChecker){
+  if(ageChecker >= 13 && ageChecker <= 19){
+    return "You are a teenager!"
+  }
+  else{
+    return "You are not a teenager"
+  }
+
+}
 
   describe('basicTeenager', (ageChecker) => {
     it('should return "You are a teenager!" if the age is between 13-19', () => {
