@@ -21,8 +21,8 @@ describe('flow-control', () => {
     })
   })
 
-function basicTeenager(ageChecker){
-  if(ageChecker >= 13 && ageChecker <= 19){
+function basicTeenager(age){
+  if(age >= 13 && age <= 19){
     return "You are a teenager!"
   }
   else {
@@ -31,15 +31,28 @@ function basicTeenager(ageChecker){
 
 }
 
-function teenager(ageChecker){
-  if(ageChecker >= 13 && ageChecker <= 19){
+function teenager(age){
+  if(age >= 13 && age <= 19){
     return "You are a teenager!"
   }
   else{
     return "You are not a teenager"
   }
 
+}]
+function ageChecker(age){
+  if(age >= 13 && age <= 19){
+    return "You are a teenager!"
+  }
+  else if( age < 13){
+    return "You are not a kid"
+  }
+  else{
+    return "You are a grownup"
+  }
+
 }
+
 
   describe('basicTeenager', () => {
     it('should return "You are a teenager!" if the age is between 13-19', () => {
