@@ -41,8 +41,8 @@ function teenager(ageChecker){
 
 }
 
-  describe('basicTeenager', (ageChecker) => {
-    it('should return "You are a teenager!" if the age is between 13-19', () => {
+  describe('basicTeenager', () => {
+    it('should return "You are a teenager!" if the age is between 13-19', (ageChecker) => {
       expect(basicTeenager(13)).toEqual("You are a teenager!");
     })
 
